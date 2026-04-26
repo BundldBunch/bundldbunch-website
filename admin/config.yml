@@ -13,7 +13,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Product ID", name: "id", widget: "string"}
       - {label: "Product Name", name: "name", widget: "string"}
       - label: "Category"
         name: "category"
@@ -25,17 +24,8 @@ collections:
         name: "badge"
         widget: "select"
         options: ["Best Seller", "New", "Limited Drop", "Staff Pick"]
-      - label: "Badge Color"
-        name: "badgeColor"
-        widget: "select"
-        options: ["green", "purple", "orange"]
       - {label: "Description", name: "description", widget: "text"}
-      - label: "What's Inside"
-        name: "whatsInside"
-        widget: "list"
-        field: {label: "Item", name: "item", widget: "string"}
       - {label: "Amazon / Shopify Link", name: "amazonLink", widget: "string"}
-      - {label: "Direct Ship", name: "directShip", widget: "boolean", default: false}
       - {label: "In Stock", name: "inStock", widget: "boolean", default: true}
       - {label: "Low Stock", name: "lowStock", widget: "boolean", default: false}
-      - {label: "Product Image", name: "image", widget: "image"}
+      - {label: "Direct Ship", name: "directShip", widget: "boolean", default: false}
